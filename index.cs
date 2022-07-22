@@ -105,54 +105,76 @@ namespace FPS_Python
             string pythonDir = python_int.Text;
 
             string virtualenvLabel = virtualenv_name.Text;
-            string[] packages = new string[package_list.Items.Count];
+            string[] packages = package_list.Items.OfType<string>().ToArray();
             bool requirements = requirements_checkbox.Checked;
-
-            for(int i = 0; i < package_list.Items.Count; i++)
-            {
-                packages.Append(package_list.Items[i].ToString());
-            }
 
             try
             {
                 System.Diagnostics.Process cmd = new System.Diagnostics.Process();
                 System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
-                // startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
                 startInfo.FileName = "cmd.exe";
                 startInfo.Arguments = "/C mkdir " + projectDir + "\\" + projectLabel;
                 string projectPath = projectDir + "\\" + projectLabel;
                 string python = pythonDir + "\\python.exe";
                 cmd.StartInfo = startInfo;
                 cmd.Start();
-                Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+                cmd.WaitForExit();
+                cmd.Close();
                 if (virtualenvLabel != null || virtualenvLabel != "Enter your virtualenv name here")
                 {
-                    startInfo.Arguments = "/C cd " + projectPath + " && " + python + " -m venv " + virtualenvLabel;
-                    cmd.StartInfo = startInfo;
-                    cmd.Start();
-                    Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+                    System.Diagnostics.Process cmd1 = new System.Diagnostics.Process();
+                    System.Diagnostics.ProcessStartInfo startInfo1 = new System.Diagnostics.ProcessStartInfo();
+                    startInfo1.FileName = "cmd.exe";
+                    startInfo1.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                    startInfo1.Arguments = "/C " + python +  " -m venv " + "\"" + projectPath + "\\" + virtualenvLabel + "\"";
+                    cmd1.StartInfo = startInfo1;
+                    cmd1.Start();
+                    cmd1.WaitForExit();
+                    cmd1.Close();
+                    debug.Text = "1";
 
-                    startInfo.Arguments = "/C cd " + projectPath + " && " + "venv\\Scripts\\activate.bat";
-                    cmd.StartInfo = startInfo;
-                    cmd.Start();
-                    Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+                    System.Diagnostics.Process cmd2 = new System.Diagnostics.Process();
+                    System.Diagnostics.ProcessStartInfo startInfo2 = new System.Diagnostics.ProcessStartInfo();
+                    startInfo2.FileName = "cmd.exe";
+                    startInfo2.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                    startInfo2.Arguments = "/C " + projectPath + "\\" + virtualenvLabel + "\\Scripts\\activate.bat";
+                    cmd2.StartInfo = startInfo;
+                    debug.Text = "2";
+                    cmd2.Start();
+                    debug.Text = "3";
+                    cmd2.WaitForExit();
+                    cmd2.Close();
+                    debug.Text = "4";
 
                     for (int i = 0; i <= packages.Length; i++)
                     {
-                        startInfo.Arguments = "/C cd " + projectPath + " && " + "venv\\Scripts\\activate.bat && " + pythonDir + "-m pip install " + packages[i];
-                        cmd.StartInfo = startInfo;
-                        cmd.Start();
-                        Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+                        System.Diagnostics.Process cmd3 = new System.Diagnostics.Process();
+                        System.Diagnostics.ProcessStartInfo startInfo3 = new System.Diagnostics.ProcessStartInfo();
+                        startInfo3.FileName = "cmd.exe";
+                        startInfo3.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                        startInfo3.Arguments = "/C " + projectPath + "\\" + virtualenvLabel + "\\Scripts\\activate.bat " + "&&" + " pip install " + packages[i];
+                        cmd3.StartInfo = startInfo3;
+                        cmd3.Start();
+                        cmd3.WaitForExit();
+                        cmd3.Close();
+                        debug.Text = startInfo3.Arguments;
                     }
                 }
                 else
                 {
                     for (int i = 0; i <= packages.Length; i++)
                     {
-                        startInfo.Arguments = "/C " + pythonDir + "-m pip install " + packages[i];
-                        cmd.StartInfo = startInfo;
-                        cmd.Start();
-                        Console.WriteLine(cmd.StandardOutput.ReadToEnd());
+                        System.Diagnostics.Process cmd4 = new System.Diagnostics.Process();
+                        System.Diagnostics.ProcessStartInfo startInfo4 = new System.Diagnostics.ProcessStartInfo();
+                        startInfo4.FileName = "cmd.exe";
+                        startInfo4.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                        startInfo4.Arguments = "/C " + python + " -m pip install " + packages[i];
+                        cmd4.StartInfo = startInfo4;
+                        cmd4.Start();
+                        cmd4.WaitForExit();
+                        cmd4.Close();
+                        debug.Text = startInfo4.Arguments;
                     }
                 }
             }
