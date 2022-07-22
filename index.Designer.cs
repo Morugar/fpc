@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(index));
             this.projectName = new System.Windows.Forms.TextBox();
             this.github_repo = new System.Windows.Forms.TextBox();
             this.project_dir = new System.Windows.Forms.TextBox();
@@ -44,8 +45,6 @@
             this.delete_package_button = new System.Windows.Forms.Button();
             this.requirements_checkbox = new System.Windows.Forms.CheckBox();
             this.create_project = new System.Windows.Forms.Button();
-            this.debug = new System.Windows.Forms.Label();
-            this.debug2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // projectName
@@ -194,31 +193,11 @@
             this.create_project.UseVisualStyleBackColor = true;
             this.create_project.Click += new System.EventHandler(this.create_project_Click);
             // 
-            // debug
-            // 
-            this.debug.AutoSize = true;
-            this.debug.Location = new System.Drawing.Point(178, 225);
-            this.debug.Name = "debug";
-            this.debug.Size = new System.Drawing.Size(35, 13);
-            this.debug.TabIndex = 15;
-            this.debug.Text = "label1";
-            // 
-            // debug2
-            // 
-            this.debug2.AutoSize = true;
-            this.debug2.Location = new System.Drawing.Point(156, 172);
-            this.debug2.Name = "debug2";
-            this.debug2.Size = new System.Drawing.Size(35, 13);
-            this.debug2.TabIndex = 16;
-            this.debug2.Text = "label1";
-            // 
             // index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 243);
-            this.Controls.Add(this.debug2);
-            this.Controls.Add(this.debug);
             this.Controls.Add(this.create_project);
             this.Controls.Add(this.requirements_checkbox);
             this.Controls.Add(this.delete_package_button);
@@ -236,6 +215,7 @@
             this.Controls.Add(this.projectName);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "index";
@@ -264,8 +244,6 @@
         private System.Windows.Forms.Button delete_package_button;
         private System.Windows.Forms.CheckBox requirements_checkbox;
         private System.Windows.Forms.Button create_project;
-        private System.Windows.Forms.Label debug;
-        private System.Windows.Forms.Label debug2;
     }
 }
 

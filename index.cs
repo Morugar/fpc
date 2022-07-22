@@ -132,7 +132,6 @@ namespace FPS_Python
                     cmd1.Start();
                     cmd1.WaitForExit();
                     cmd1.Close();
-                    debug.Text = "1";
 
                     System.Diagnostics.Process cmd2 = new System.Diagnostics.Process();
                     System.Diagnostics.ProcessStartInfo startInfo2 = new System.Diagnostics.ProcessStartInfo();
@@ -140,12 +139,9 @@ namespace FPS_Python
                     startInfo2.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
                     startInfo2.Arguments = "/C " + projectPath + "\\" + virtualenvLabel + "\\Scripts\\activate.bat";
                     cmd2.StartInfo = startInfo;
-                    debug.Text = "2";
                     cmd2.Start();
-                    debug.Text = "3";
                     cmd2.WaitForExit();
                     cmd2.Close();
-                    debug.Text = "4";
 
                     for (int i = 0; i <= packages.Length; i++)
                     {
@@ -158,7 +154,6 @@ namespace FPS_Python
                         cmd3.Start();
                         cmd3.WaitForExit();
                         cmd3.Close();
-                        debug.Text = startInfo3.Arguments;
                     }
                 }
                 else
@@ -174,7 +169,6 @@ namespace FPS_Python
                         cmd4.Start();
                         cmd4.WaitForExit();
                         cmd4.Close();
-                        debug.Text = startInfo4.Arguments;
                     }
                 }
             }
