@@ -1,0 +1,15 @@
+C:\Users\morugar\projects\fpc\python\bin\Release\FPS_Python.exe.config
+C:\Users\morugar\projects\fpc\python\bin\Release\FPS_Python.exe.manifest
+C:\Users\morugar\projects\fpc\python\bin\Release\FPS_Python.application
+C:\Users\morugar\projects\fpc\python\bin\Release\FPS_Python.exe
+C:\Users\morugar\projects\fpc\python\bin\Release\FPS_Python.pdb
+C:\Users\morugar\projects\fpc\python\obj\Release\FPC_Python.csproj.AssemblyReference.cache
+C:\Users\morugar\projects\fpc\python\obj\Release\FPC_Python.csproj.SuggestedBindingRedirects.cache
+C:\Users\morugar\projects\fpc\python\obj\Release\FPS_Python.index.resources
+C:\Users\morugar\projects\fpc\python\obj\Release\FPS_Python.Properties.Resources.resources
+C:\Users\morugar\projects\fpc\python\obj\Release\FPC_Python.csproj.GenerateResource.cache
+C:\Users\morugar\projects\fpc\python\obj\Release\FPC_Python.csproj.CoreCompileInputs.cache
+C:\Users\morugar\projects\fpc\python\obj\Release\FPS_Python.exe.manifest
+C:\Users\morugar\projects\fpc\python\obj\Release\FPS_Python.application
+C:\Users\morugar\projects\fpc\python\obj\Release\FPS_Python.exe
+C:\Users\morugar\projects\fpc\python\obj\Release\FPS_Python.pdb

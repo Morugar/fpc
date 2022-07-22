@@ -20,3 +20,7 @@ C:\Users\morugar\projects\fpc\python\obj\Debug\FPC_Python.csproj.GenerateResourc
 C:\Users\morugar\projects\fpc\python\obj\Debug\FPC_Python.csproj.CoreCompileInputs.cache
 C:\Users\morugar\projects\fpc\python\obj\Debug\FPS_Python.exe
 C:\Users\morugar\projects\fpc\python\obj\Debug\FPS_Python.pdb
+C:\Users\morugar\projects\fpc\python\bin\Debug\FPS_Python.exe.manifest
+C:\Users\morugar\projects\fpc\python\bin\Debug\FPS_Python.application
+C:\Users\morugar\projects\fpc\python\obj\Debug\FPS_Python.exe.manifest
+C:\Users\morugar\projects\fpc\python\obj\Debug\FPS_Python.application
