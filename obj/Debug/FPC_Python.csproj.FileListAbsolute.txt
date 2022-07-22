@@ -1,0 +1,11 @@
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\bin\Debug\FPS_Python.exe.config
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\bin\Debug\FPS_Python.exe
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\bin\Debug\FPS_Python.pdb
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPC_Python.csproj.AssemblyReference.cache
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPC_Python.csproj.SuggestedBindingRedirects.cache
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPS_Python.index.resources
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPS_Python.Properties.Resources.resources
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPC_Python.csproj.GenerateResource.cache
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPC_Python.csproj.CoreCompileInputs.cache
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPS_Python.exe
+C:\Users\morugar\trash\fps_project_testrun3\FPS_Python\obj\Debug\FPS_Python.pdb
