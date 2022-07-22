@@ -4,7 +4,7 @@ Fast Project Creator (FPS) it's a multitool for creating diffrent templates of p
 <h1 align="center"> <img src="https://github.com/Morugar/fpc/blob/python/image.png?raw=true"> </h1>
 
 
-## Current version: ![https://github.com/Morugar/fpc/releases/tag/v0.1-alpha](https://img.shields.io/github/v/release/morugar/fpc?include_prereleases&sort=semver)
+## Current version: [![https://github.com/Morugar/fpc/releases/tag/v0.1-alpha](https://img.shields.io/github/v/release/morugar/fpc?include_prereleases&sort=semver)](https://github.com/Morugar/fpc/releases/tag/v0.1-alpha)
 
 ## Supported LP: ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
